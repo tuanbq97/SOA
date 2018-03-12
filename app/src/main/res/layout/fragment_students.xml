@@ -1,0 +1,26 @@
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button
+        android:id="@+id/btnThemLop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:text="Them Lop"
+        />
+    <Button
+        android:id="@+id/btnxemdslop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:text="Xem danh sach lop"
+        />
+    <Button
+        android:id="@+id/btnquanlisv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:text="Quan li sinh vien"
+        />
+</LinearLayout>

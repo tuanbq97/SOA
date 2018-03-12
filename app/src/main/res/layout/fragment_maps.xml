@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.tuangb.studyfly.MainActivity">
+
+    <fragment
+        android:id="@+id/mapFPT"
+        class="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_weight="1" />
+    <EditText
+        android:id="@+id/edorigin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Vị trí hiện tại"
+        />
+    <EditText
+        android:id="@+id/eddiadiem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Điểm đến"
+
+        />
+    <Button
+        android:id="@+id/btnFind"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Find Path"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="+"
+            android:layout_weight="1"
+            android:onClick="zoomIn"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="-"
+            android:layout_weight="1"
+            android:onClick="zoomOut"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="FPT"
+            android:layout_weight="1"
+            android:onClick="showMapFPT"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Ha noi"
+            android:layout_weight="1"
+            android:onClick="gotoHanoi"/>
+    </LinearLayout>
+
+</LinearLayout>

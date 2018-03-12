@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.tuangb.studyfly.fragment.SocialFragment">
+
+    <EditText
+        android:gravity="center"
+        android:hint="Nhập đường dẫn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edt_url"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_link"
+        android:text="Update"
+        android:layout_gravity="center"
+        android:background="#5d5ea3"
+        android:textColor="#fff"
+        android:layout_marginTop="15dp"/>
+    <ImageView
+        android:src="@drawable/ic_profile"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        android:id="@+id/im_image"
+        android:layout_marginTop="20dp"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Share Image"
+        android:id="@+id/btn_image"
+        android:layout_gravity="center"
+        android:background="#5d5ea3"
+        android:textColor="#fff"/>
+
+    <VideoView
+        android:id="@+id/videoView"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="10dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_marginLeft="50dp"
+            android:text="Pick Video"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_video"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_sharevideo"
+            android:text="Share Video"
+            android:layout_marginLeft="80dp"/>
+    </LinearLayout>
+</LinearLayout>
